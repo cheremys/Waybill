@@ -1,0 +1,6 @@
+@Waybill.Api_HostAddress = http://localhost:5028
+
+GET {{Waybill.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
