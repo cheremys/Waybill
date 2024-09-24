@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C5DC0D4C-C03
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waybill.Api", "Waybill.Api\Waybill.Api.csproj", "{FEC091D1-977D-41FC-809E-53405E6FF25B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waybill.Web", "Waybill.Web\Waybill.Web.csproj", "{C9D9C277-7091-477A-83A2-90AC5821D266}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +19,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FEC091D1-977D-41FC-809E-53405E6FF25B} = {C5DC0D4C-C033-450A-B6BB-0DE88B712BFC}
+		{C9D9C277-7091-477A-83A2-90AC5821D266} = {C5DC0D4C-C033-450A-B6BB-0DE88B712BFC}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FEC091D1-977D-41FC-809E-53405E6FF25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FEC091D1-977D-41FC-809E-53405E6FF25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEC091D1-977D-41FC-809E-53405E6FF25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEC091D1-977D-41FC-809E-53405E6FF25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D9C277-7091-477A-83A2-90AC5821D266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D9C277-7091-477A-83A2-90AC5821D266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D9C277-7091-477A-83A2-90AC5821D266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D9C277-7091-477A-83A2-90AC5821D266}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
