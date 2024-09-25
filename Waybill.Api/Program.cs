@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Add service defaults & Aspire components.
+builder.AddServiceDefaults();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -19,5 +21,5 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapDefaultEndpoints();
 app.Run();

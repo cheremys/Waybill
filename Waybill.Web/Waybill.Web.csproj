@@ -6,4 +6,8 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Waybill.ServiceDefaults\Waybill.ServiceDefaults.csproj" />
+    </ItemGroup>
+
 </Project>

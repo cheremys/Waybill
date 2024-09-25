@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waybill.Api", "Waybill.Api\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waybill.Web", "Waybill.Web\Waybill.Web.csproj", "{C9D9C277-7091-477A-83A2-90AC5821D266}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waybill.ServiceDefaults", "Waybill.ServiceDefaults\Waybill.ServiceDefaults.csproj", "{851431E1-785A-491D-8C7B-2B2F069207B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waybill.AppHost", "Waybill.AppHost\Waybill.AppHost.csproj", "{CFE57331-F6ED-4F83-AE40-61BDDC816F7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FEC091D1-977D-41FC-809E-53405E6FF25B} = {C5DC0D4C-C033-450A-B6BB-0DE88B712BFC}
 		{C9D9C277-7091-477A-83A2-90AC5821D266} = {C5DC0D4C-C033-450A-B6BB-0DE88B712BFC}
+		{851431E1-785A-491D-8C7B-2B2F069207B5} = {C5DC0D4C-C033-450A-B6BB-0DE88B712BFC}
+		{CFE57331-F6ED-4F83-AE40-61BDDC816F7A} = {C5DC0D4C-C033-450A-B6BB-0DE88B712BFC}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FEC091D1-977D-41FC-809E-53405E6FF25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +36,13 @@ Global
 		{C9D9C277-7091-477A-83A2-90AC5821D266}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9D9C277-7091-477A-83A2-90AC5821D266}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9D9C277-7091-477A-83A2-90AC5821D266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851431E1-785A-491D-8C7B-2B2F069207B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851431E1-785A-491D-8C7B-2B2F069207B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851431E1-785A-491D-8C7B-2B2F069207B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851431E1-785A-491D-8C7B-2B2F069207B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE57331-F6ED-4F83-AE40-61BDDC816F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE57331-F6ED-4F83-AE40-61BDDC816F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE57331-F6ED-4F83-AE40-61BDDC816F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE57331-F6ED-4F83-AE40-61BDDC816F7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
