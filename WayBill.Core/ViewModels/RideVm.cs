@@ -1,6 +1,6 @@
-namespace Waybill.Web.Models;
+namespace WayBill.Core.ViewModels;
 
-public class Ride
+public class RideVm
 {
     public int Id { get; set; }
     
@@ -20,5 +20,5 @@ public class Ride
     
     public DateTime ReleaseCarTime { get; set; }
     
-    public string? CargoName { get; set; } 
+    public string? CargoName { get; set; }
 }

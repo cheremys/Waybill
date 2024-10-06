@@ -1,5 +1,6 @@
 @page "/rides"
-@using Waybill.Web.Models
+@using WayBill.Core.ViewModels
+@inject Services.RideService RideService;
 
 <div class="container mt-4">
     <h3 class="mb-4">Ride List</h3>
@@ -21,20 +22,23 @@
         </tr>
         </thead>
         <tbody>
-        @foreach (var ride in rides)
+        @if (rides is not null)
         {
-            <tr>
-                <td>@ride.Id</td>
-                <td>@ride.Car</td>
-                <td>@ride.Driver</td>
-                <td>@ride.StartPoint</td>
-                <td>@ride.EndPoint</td>
-                <td>@ride.Distance</td>
-                <td>@ride.RideDateTime.ToString("g")</td>
-                <td>@ride.SpeedometerReading</td>
-                <td>@ride.ReleaseCarTime.ToString("g")</td>
-                <td>@ride.CargoName ?? "N/A"</td>
-            </tr>
+            @foreach (var ride in rides)
+            {
+                <tr>
+                    <td>@ride.Id</td>
+                    <td>@ride.Car</td>
+                    <td>@ride.Driver</td>
+                    <td>@ride.StartPoint</td>
+                    <td>@ride.EndPoint</td>
+                    <td>@ride.Distance</td>
+                    <td>@ride.RideDateTime.ToString("g")</td>
+                    <td>@ride.SpeedometerReading</td>
+                    <td>@ride.ReleaseCarTime.ToString("g")</td>
+                    <td>@ride.CargoName ?? "N/A"</td>
+                </tr>
+            }
         }
         </tbody>
     </table>
@@ -42,9 +46,17 @@
 
 @code {
     // Sample list of rides
-    private List<Ride> rides = new List<Ride>
+    private IEnumerable<RideVm>? rides; 
+
+    protected override async Task OnInitializedAsync()
     {
-        new Ride { Id = 1, Car = "Tesla Model S", Driver = "John Doe", StartPoint = "City A", EndPoint = "City B", Distance = 120.5, RideDateTime = DateTime.Now.AddHours(-2), SpeedometerReading = 12000, ReleaseCarTime = DateTime.Now.AddHours(-1), CargoName = "Electronics" },
-        new Ride { Id = 2, Car = "Ford F-150", Driver = "Jane Smith", StartPoint = "City C", EndPoint = "City D", Distance = 200.0, RideDateTime = DateTime.Now.AddHours(-3), SpeedometerReading = 45000, ReleaseCarTime = DateTime.Now.AddHours(-1.5), CargoName = "Furniture" }
-    };
+        try
+        {
+            rides = await RideService.GetRidesAsync();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+    }
 }

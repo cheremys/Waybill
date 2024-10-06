@@ -7,10 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.5" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Waybill.Application\Waybill.Application.csproj" />
+      <ProjectReference Include="..\WayBill.Core\WayBill.Core.csproj" />
+      <ProjectReference Include="..\Waybill.Infrastructure\Waybill.Infrastructure.csproj" />
       <ProjectReference Include="..\Waybill.ServiceDefaults\Waybill.ServiceDefaults.csproj" />
     </ItemGroup>
 
